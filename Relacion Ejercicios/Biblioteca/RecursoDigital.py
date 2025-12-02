@@ -31,3 +31,5 @@ class RecursoDigital:
     def tipo(self):
         return f"Recurso genérico"
     
+    def __str__(self):
+        return f"Título: {self.__titulo}, Autor: {self.__autor}, Año: {self.__anio}"

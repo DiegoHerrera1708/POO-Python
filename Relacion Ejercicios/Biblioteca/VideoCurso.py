@@ -11,3 +11,6 @@ class VideoCurso(RecursoDigital):
     
     def tipo(self):
         return "Video"
+    
+    def desc(self):
+        return f"{super().__str__()}, Duración: {self.duracion_minutos} minutos, Nivel: {self.nivel}"

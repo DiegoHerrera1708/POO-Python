@@ -11,3 +11,6 @@ class LibroDigital (RecursoDigital):
     
     def tipo(self):
         return "Libro"
+    
+    def desc(self):
+        return f"{super().__str__()}, Páginas: {self.num_paginas}, Formato: {self.formato}"

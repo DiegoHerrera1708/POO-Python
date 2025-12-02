@@ -8,3 +8,9 @@ class Podcast(RecursoDigital):
 
     def abrir(self):
         return f"Abriendo {self.get_titulo()} de {self.get_autor()}"
+    
+    def tipo(self):
+        return "Podcast"
+    
+    def desc(self):
+        return f"{super().__str__()}, Episodios: {self.num_episodios}, Tema: {self.tema}"
